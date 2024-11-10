@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lexend Deca', sans-serif;
+
+}
+
+body {
+  height: 1400px;
+}
+
+
+
+/*   
+///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////  
+ Start First Section
+/////////////////////////////////////////////////////// 
+///////////////////////////////////////////////////////
+ */
+
+ .first-section {
+  background: linear-gradient(300deg, #ede3e3, #e9e4e4, #d2e2e4, #cfeef1);
+}
+
+
+/*   
+///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////  
+ End First Section
+/////////////////////////////////////////////////////// 
+///////////////////////////////////////////////////////
+ */
+
+
+
+
+
+
+
+/*   
+///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////  
+ Start Second Section  
+/////////////////////////////////////////////////////// 
+///////////////////////////////////////////////////////
+ */
+
+
+ .section-2 {
+    height: 920px;
+    background: linear-gradient(300deg, #ede3e3, 30%, #e9e4e4, #d8e3e4, #cae7e9);
+  }
+  
+  .card-section {
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .section-heading {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .section-heading h1 {
+    margin-top: 15x;
+  }
+  
+  .cards {
+    width: 70%;
+    max-width: 1200px;
+    height: 680px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  
+  }
+  
+  .card1,
+  .card2,
+  .card3,
+  .card4,
+  .card5,
+  .card6 {
+    width: 30%;
+    height: 300px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    box-shadow: 10px 20px 5px rgb(132, 117, 117);
+  }
+  
+  .card-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .card-txt {
+    width: 80%;
+    margin-top: 15px;
+  }
+  
+  .card {
+    position: relative;
+  }
+  
+  .card-btn {
+    width: 100px;
+    height: 40px;
+    bottom: 20px;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    border-style: none;
+    margin-top: 20px;
+    border: 1px solid black;
+    cursor: pointer;
+    position: absolute;
+  
+  }
+  
+  .card-top i {
+    margin: 5px;
+    font-size: xx-large;
+  
+  }
+  
+  .card-top h3 {
+    color: white;
+  }
+  
+  .underline {
+    text-decoration: none;
+    position: relative;
+    height: 50px;
+  }
+  
+  .underline:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    top: 40px;
+    left: 50%;
+    right: 0;
+    width: 120%;
+    background: #FB6E0F;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+    transform: translateX(-50%);
+  }
+  
+  .underline:hover:after {
+    width: 200%;
+    background: green;
+  
+  }
+  
+  @media(max-width:800px) {
+    .underline:hover:after {
+      width: 150%;
+  
+    }
+  }
+  
+  @media(max-width:470px) {
+    .section-heading h3 {
+      font-size: medium;
+    }
+  
+    .section-heading .underline h1 {
+      font-size: x-large;
+    }
+  
+    .underline:after {
+      width: 100%;
+    }
+  
+    .underline:hover:after {
+      width: 120%;
+    }
+  }
+  
+  @media(max-width:370px) {
+    .section-heading h3 {
+      font-size: 14px;
+    }
+  
+    .section-heading .underline h1 {
+      font-size: 22px;
+    }
+  
+    .underline:after {
+      width: 100%;
+      top: 30px;
+    }
+  
+    .underline:hover:after {
+      width: 150%;
+    }
+  }
+  
+  
+  @media(min-width:1340px) {
+  
+    .card1,
+    .card2,
+    .card3,
+    .card4,
+    .card5,
+    .card6 {
+      height: 280px;
+    }
+  }
+  
+  @media(max-width:1320px) {
+    .cards {
+      width: 80%;
+    }
+  }
+  
+  @media(max-width:1280px) {
+    .card-txt {
+      font-size: 15px;
+    }
+  }
+  
+  @media(max-width:1280px) and (min-width:1000px) {
+    .card-txt {
+      text-align: justify;
+    }
+  }
+  
+  @media(max-width:1050px) {
+  
+    .cards {
+      width: 90%;
+    }
+  
+  
+  }
+  
+  @media(max-width:900px) {
+  
+    .card-txt {
+      font-size: 14px;
+    }
+  
+    .card1,
+    .card2,
+    .card3,
+    .card4,
+    .card5,
+    .card6 {
+      height: 280px;
+    }
+  }
+  
+  @media(max-width:850px) {
+    .card-txt {
+      font-size: 13px;
+    }
+  
+    .card-top h3 {
+      font-size: medium;
+    }
+  
+    .card1,
+    .card2,
+    .card3,
+    .card4,
+    .card5,
+    .card6 {
+      height: 260px;
+  
+    }
+  }
+  
+  @media(max-width:800px) {
+    .cards {
+      width: 80%;
+      height: 870px;
+    }
+  
+    .card1,
+    .card2,
+    .card3,
+    .card4,
+    .card5,
+    .card6 {
+      width: 47%;
+      box-shadow: 15px 12px 15px rgb(132, 117, 117);
+  
+    }
+  
+    .card-top h3 {
+      font-size: large;
+    }
+  
+    .section-2 {
+      height: 1150px;
+      ;
+    }
+  
+    .section-heading {
+      margin-top: 100px;
+    }
+  
+    .card-section {
+      height: 1100px;
+    }
+  }
+  
+  @media(max-width:570px) {
+  
+    .cards {
+      width: 92%;
+      height: 800px;
+    }
+  
+    .card1,
+    .card2,
+    .card3,
+    .card4,
+    .card5,
+    .card6 {
+      width: 48%;
+      height: 240px;
+      box-shadow: 10px 12px 5px rgb(132, 117, 117);
+    }
+  
+    .card-txt {
+      font-size: 13px;
+      text-align: justify;
+      margin-top: 5px;
+    }
+  
+    .card-top i {
+      font-size: 26px;
+    }
+  }
+  
+  @media(max-width:470px) {
+    .section-2 {
+      height: 1750px;
+    }
+  
+    .section-heading {
+      margin-top: 20px
+    }
+  
+    .cards {
+      width: 90%;
+      height: 1500px;
+      justify-content: center;
+    }
+  
+    .card-section {
+      height: 1700px;
+    }
+  
+    .card1,
+    .card2,
+    .card3,
+    .card4,
+    .card5,
+    .card6 {
+      width: 250px;
+      max-width: 250px;
+      height: 220px;
+  
+    }
+    .underline:hover:after {
+      width: 160%;
+    }
+  }
+  
+  /*   
+  ///////////////////////////////////////////////////////
+  ///////////////////////////////////////////////////////  
+   End Second Section  
+  /////////////////////////////////////////////////////// 
+  ///////////////////////////////////////////////////////
+   */
+  
+  
+  
+  
+
+   
+
+
+

@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;
+
+}
+
+body {
+    height: 1500px;
+    background: linear-gradient(300deg, #ede3e3, #e9e4e4, #d2e2e4, #cfeef1);
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+nav {
+    background: transparent;
+    padding: 15px 10px 5px 10px;
+    border-bottom: 1px solid rgb(170, 163, 163);
+    width: 90%;
+    margin: auto;
+    max-width: 1500px;
+
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li.logo {
+    flex: 1;
+    font-size: 30px;
+    font-weight: 700;
+    display: flex;
+    color: black;
+    align-items: center;
+    justify-items: center;
+}
+
+nav ul li.logo span {
+    color: #B98508;
+}
+
+nav ul li.logo img {
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 25;
+}
+
+nav ul div.items {
+    padding-left: 25px;
+    display: inline-flex;
+    margin-bottom: 2px;
+
+}
+
+nav ul div.items a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 5px;
+    margin: auto;
+    color: #212529;
+    line-height: 12px;
+    transition: color 0.3s ease;
+}
+
+nav ul div.items a:hover {
+    color: #FB6E0F;
+    background-color: #f5f5f6;
+}
+
+nav ul li.btn {
+    font-size: 15px;
+    flex: 1;
+    padding-left: 10px;
+    padding-top: 3px;
+    cursor: pointer;
+}
+
+
+
+nav ul div.items .sidenav {
+    width: 0;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    color: wheat;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+nav ul div.items .sidenav a {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 8px;
+    font-size: 15px;
+    color: white;
+    display: block;
+    width: 80%;
+    transition: 0.3s;
+}
+
+nav ul div.items .sidenav a:hover {
+    color: #FB6E0F;
+}
+
+nav ul div.items .sidenav .closebtn {
+    position: absolute;
+    top: 10px;
+    font-size: 36px;
+    color: white;
+    width: 20%;
+    height: 25px;
+    left: 20px;
+    padding-left: 6px;
+    line-height: 3px;
+}
+
+@media(max-width:540px) {
+
+    nav ul div.items li a:nth-child(1),
+    nav ul div.items li a:nth-child(2) nav ul div.items li a:nth-child(3) {
+        display: none;
+    }
+}
+
+@media(max-width:400px) {
+    nav ul div.items .sidenav a {
+        font-size: 10px;
+    }
+}
+
+
+
